@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  color: #555;
+  background: #f8fbfd;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.center {
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  max-width: 60px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+.header {
+  position: sticky;
+  background: #eef6fb;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-actions .btn {
+  margin-left: 10px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 800;
+  font-size: 14px;
+}
+.btn-primary {
+  background: #1e9be9;
+  color: #fff;
+}
+.btn-grey {
+  background: #6c757d;
+  color: #fff;
+}
+
+.hero {
+  padding: 10px 0;
+  background: #eef6fb;
+}
+.hero-content {
+  display: flex;
+  width: 100%;
+  max-width: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  padding: 50px;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  color: #1a1a1a;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.hero-text h1 span {
+  color: #1e9be9;
+  font-weight: 800;
+}
+.hero-text p {
+  margin-bottom: 20px;
+  color: #555;
+}
+.hero-image img {
+  width: 100%;
+}
+
+.dashboard-preview {
+  padding: 80px 0;
+}
+.dashboard-preview img {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modules {
+  padding: 80px 0;
+  background: #fff;
+}
+h2 {
+  color: #1e9be9;
+  font-weight: 800;
+  font-size: 34px;
+}
+h3 {
+  color: #1e9be9;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+.card {
+  border: 1px solid #e6eef5;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: left;
+  background: #fff;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transform: scale(1.05);
+  background: #f0f8ff;
+}
+.card svg {
+  height: 45px;
+  margin-bottom: 15px;
+  color: #0095D8;
+}
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.cta{
+  padding:80px 0;
+}
+
+.cta-box{
+  margin: auto;
+  background:#e9f5fd;
+  border-radius:12px;
+  display: flex;
+  padding:40px 50px;
+  gap: 40px;
+}
+
+.cta-box p{
+  color: #1a1a1a;
+  flex:1;
+}
+
+.footer {
+  padding: 40px 0;
+  background: #f1f5f8;
+  margin-top: 40px;
+}
+.footer-info {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+
+.login-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-card {
+  background: #fff;
+  padding: 40px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.login-card h2 {
+  color: #1e9be9;
+  margin-bottom: 10px;
+}
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+.login-card input {
+  padding: 10px;
+  border: 1px solid #dce3ea;
+  border-radius: 6px;
+}
+.login-card textarea {
+  padding: 10px;
+  border: 1px solid #dce3ea;
+  border-radius: 6px;
+}
+
+.contact-info {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-info svg{
+  height: 25px;
+  color: #0095D8;
+}
+
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cta-box {
+     flex-direction:column;
+    gap:20px;
+    text-align:center;
+  }
+}
+
+@media (max-width: 600px){
+
+  .nav{
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-actions{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+  }
+
+  .nav-actions .btn{
+    flex: 1;
+    text-align: center;
+    padding: 12px 8px;
+    font-size: 13px;
+  }
+
+  .logo{
+    font-size: 22px;
+  }
+}
